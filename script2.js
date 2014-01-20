@@ -12,7 +12,26 @@ $(document).ready(function() {
         }
     });
 
-
+    /**
+     * Using $(document).on is a bad habit that you'll want to break early on.
+     * Essentially what this does is adds a click event listener to the document 
+     * so anytime the user clicks on anything the browser has to traverse down 
+     * the DOM to find all elements with a class of cart.
+     *
+     * There are 5 $(document).on in the app, which means that when anything is
+     * clicked within the window the DOM is traversed five times to find the appropriate
+     * elements.  
+     * 
+     * This adds a lot of overhead and in large applications you'll 
+     * notice a big hit to performance.  You should try to get the scope as 
+     * small as possible by finding the closest containing element.  In this
+     * case, we know that on page load there is going to be ol.itemsBought which
+     * is going to contain all of the list items.  You should change $(document)
+     * to $(".itemsBought"), this will reduce the amount of over head the browser
+     * has to do.  
+     *
+     * You should do the same to the remaining $(document).on
+     */
     //When the cart icon is pressed move that item to the shoppingCart list
     $(document).on('click', '.cart', function() {
         var item = $(this).closest('li').text();
