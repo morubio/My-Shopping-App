@@ -1,0 +1,50 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+    	<title>Shopping App</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet2.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script language="javascript" type="text/javascript" src="script2.js"></script>
+	</head>
+	<body>
+		
+    <div id="wrapper">
+        <h1>My Shopping App</h1>
+		<form id="addItem" name="addItem" autocomplete="on">
+			<label>Need some:</label>
+            <input type="text" name="addItem" placeholder="stuff" required autofocus> 
+            <button type="submit" id="add">Add</button>
+        </form>
+        
+        <ol class="itemsToBuy">
+            <h3>What I need to buy
+            <img class="trash" id="list" src="img/trash.jpeg" title="Trash Shopping List">
+            </h3>
+        <!--<li class="item">Milk
+                <span class="icons">
+                    <img class="cart" src="img/cart.jpeg" alt="Cart" title="Move to Cart">
+                    <img class="remove" src="img/remove.jpeg" alt="Remove" title="Remove Item">
+                </span>
+            </li>-->
+        </ol>
+        
+        <ol class="itemsBought">
+            <h3>In my shopping cart
+            <img class="trash" id="cart" src="img/trash.jpeg" title="Empty Cart">
+            </h3>
+        <!--<li class="item">Soap
+                <span class="icons">
+                    <img class="list" src="img/list.jpeg" alt="List" title="Remove from Cart">
+                    <img class="remove" src="img/remove.jpeg" alt="Remove" title="Remove Item">
+                </span>
+            </li>-->    
+        </ol>
+        
+        <h2>Total damage: $<span id="total"></span></h2>
+        
+    </div>    
+    
+	</body>
+</html>

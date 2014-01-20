@@ -1,0 +1,80 @@
+body {
+    background-image: url('img/paper.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px 1000px;
+}
+
+
+#wrapper {
+    width: 450px;
+    margin: 80px auto;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 {    
+    margin: 20px 0 20px 50px;
+}
+
+h2 {    
+    display: none;
+}
+
+h3 {
+    height: 30px;
+    width: 350px;
+    margin: 30px 100px auto 10px;
+    border-bottom: 1px solid black;
+}
+
+label, ::-webkit-input-placeholder {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 14;
+}
+
+form {
+    display: inline-block;
+    margin-left:45px;
+}
+
+input {
+    height:40px;
+    width: 180px;
+    font-size: 1em;
+}
+
+button {
+    display: inline-block;
+    height:25px;
+	width:80px;
+	background-color:#3ca305;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+}
+
+li {
+	
+	border-radius: 5px;
+	margin: 3px;
+	padding: 0.4em;
+	font-size: 1em;
+	height: 25px;
+    max-width:350px;
+}
+
+.icons {
+    width: 80px
+}
+
+.icons, .remove, .trash {
+    position: relative;
+    float: right;
+}
+
+.itemsToBuy, .itemsBought {
+    width: 400px;
+    min-height: 100px;
+}
